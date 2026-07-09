@@ -1041,6 +1041,7 @@ footer {
 </section>
 
 <!-- ===================== PROJECTS ===================== -->
+
 <section id="projects" class="section">
   <div class="container">
     <div class="lbl">/ SHIPPED WORK</div>
@@ -1052,6 +1053,7 @@ footer {
       <button class="flt" data-f="unity">UNITY</button>
       <button class="flt" data-f="ue5">UNREAL_ENGINE</button>
       <button class="flt" data-f="published">PUBLISHED</button>
+      <button class="flt" data-f="systems">⚡ LIVE_DEMOS</button>
     </div>
 
     <div class="proj-grid">
@@ -1093,8 +1095,7 @@ footer {
         <div class="pc-body">
           <div class="pc-type">ACTION RPG · CONSOLE</div>
           <h3 class="pc-name">Rise of Vanara</h3>
-          <!-- FIX grammar #2: added missing "a" before "hyper-realistic" -->
-          <p class="pc-desc">AAA action-adventure RPG blending Indian mythology with cyberpunk aesthetics. Third-person hack-and-slash. Contributed to the cyberpunk future version with a hyper-realistic UE5 world.</p>
+          <p class="pc-desc">AAA action-adventure RPG blending Indian mythology with cyberpunk aesthetics. Third-person hack-and-slash. Contributed to the cyberpunk future version with hyper-realistic UE5 world.</p>
           <div class="pc-feats">
             <span class="pc-feat">Third-person combat & movement systems</span>
             <span class="pc-feat">Cyberpunk environment & world systems</span>
@@ -1119,8 +1120,7 @@ footer {
         <div class="pc-body">
           <div class="pc-type">2D PLATFORMER · MOBILE</div>
           <h3 class="pc-name">Realm of Mystic Bubble</h3>
-          <!-- FIX grammar #3: "Bubbel" → "Bubble" (matches game title spelling) -->
-          <p class="pc-desc">Bubble must sustain a protective bubble shield by collecting air bubbles and passing through waterfalls — avoiding deadly traps across treacherous platformer levels.</p>
+          <p class="pc-desc">Bubbel must sustain a protective bubble shield by collecting air bubbles and passing through waterfalls — avoiding deadly traps across treacherous platformer levels.</p>
           <div class="pc-feats">
             <span class="pc-feat">Custom shield & bubble sustain mechanic</span>
             <span class="pc-feat">2D physics & character controller</span>
@@ -1166,11 +1166,9 @@ footer {
         <div class="pc-body">
           <div class="pc-type">FIRST-PERSON SHOOTER</div>
           <h3 class="pc-name">Drone Blitz</h3>
-          <!-- FIX grammar #4: dangling fragment rewritten as a complete sentence -->
-          <p class="pc-desc">High-intensity FPS in an abandoned city. Shoot down swarms of hostile drones within a strict time limit, with limited ammo demanding careful, tactical positioning.</p>
+          <p class="pc-desc">High-intensity FPS in an abandoned city. Shoot down swarms of hostile drones within a strict time limit — limited ammo and tactical positioning demanded.</p>
           <div class="pc-feats">
-            <!-- FIX spelling #5: "behaviour" → "behavior" -->
-            <span class="pc-feat">Drone swarm AI with flight behavior</span>
+            <span class="pc-feat">Drone swarm AI with flight behaviour</span>
             <span class="pc-feat">Ammo & weapon management systems</span>
             <span class="pc-feat">FPS character controller in Blueprint</span>
           </div>
@@ -1191,8 +1189,7 @@ footer {
         <div class="pc-body">
           <div class="pc-type">2D PLATFORMER · SIDESCROLLER</div>
           <h3 class="pc-name">SideScroller</h3>
-          <!-- FIX spelling #5: "colourful" → "colorful" (American English) -->
-          <p class="pc-desc">Vibrant 2D platformer — players navigate bidirectionally collecting coins and clearing colorful obstacles. Dynamic levels with bright, immersive design for all ages.</p>
+          <p class="pc-desc">Vibrant 2D platformer — players navigate bidirectionally collecting coins and clearing colourful obstacles. Dynamic levels with bright, immersive design for all ages.</p>
           <div class="pc-feats">
             <span class="pc-feat">Custom 2D character movement controller</span>
             <span class="pc-feat">Collectible & scoring systems</span>
@@ -1200,6 +1197,142 @@ footer {
           </div>
           <div class="pc-links">
             <a href="https://drive.google.com/file/d/1eQBIk3a6sm9KzvB5EljNDPwqEDY-bTrg/preview" target="_blank" class="pc-link"><i class="fas fa-play"></i> Watch Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── GITHUB SYSTEMS DIVIDER ── -->
+      <div style="grid-column:1/-1; margin:28px 0 8px; padding-top:28px; border-top:1px solid var(--border);" class="rv">
+        <div class="lbl" style="margin-bottom:6px;">/ OPEN SOURCE · GITHUB SYSTEMS</div>
+        <p style="font-size:0.8rem;color:var(--text-m);font-family:var(--ff-mono);">Production-quality gameplay systems — open source on GitHub with <span style="color:var(--gold);font-weight:700;">live playable demos</span> on Unity Play.</p>
+      </div>
+
+      <!-- Unity-EnemyAI -->
+      <div class="pc rv d1" data-tags="unity systems">
+        <div class="pc-thumb">
+          <div class="pc-thumb-bg" style="background:linear-gradient(135deg,#0a0a1a,#0d1a2e);"></div>
+          <div class="pc-thumb-ico">🤖</div>
+          <div class="pc-thumb-fog"></div>
+          <span class="pc-badge b-unity">UNITY · C#</span>
+          <span class="pc-badge b-live">⚡ LIVE DEMO</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-type">AI SYSTEMS · OPEN SOURCE</div>
+          <h3 class="pc-name">Unity-EnemyAI</h3>
+          <p class="pc-desc">Patrol / chase / attack squad AI built on a custom FSM Framework. Cone-of-sight raycasts with wall cover detection, hearing radius, and decentralized alert system across four agents.</p>
+          <div class="pc-feats">
+            <span class="pc-feat">Cone-of-sight with real line-of-sight raycasts</span>
+            <span class="pc-feat">Hearing system — decentralized alert propagation</span>
+            <span class="pc-feat">Patrol → Chase → Attack FSM transitions</span>
+            <span class="pc-feat">Zero per-frame allocations in hot loop</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://play.unity.com/en/games/4ba64c6c-3403-44c5-abbc-8354f7bd2d1e/build" target="_blank" class="pc-link-live"><i class="fas fa-play"></i> PLAY NOW</a>
+            <a href="https://github.com/Venkate0/Unity-EnemyAI" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unity-FSM-Framework -->
+      <div class="pc rv d2" data-tags="unity systems">
+        <div class="pc-thumb">
+          <div class="pc-thumb-bg" style="background:linear-gradient(135deg,#0a1a0a,#0d2a12);"></div>
+          <div class="pc-thumb-ico">🔄</div>
+          <div class="pc-thumb-fog"></div>
+          <span class="pc-badge b-unity">UNITY · C#</span>
+          <span class="pc-badge b-live">⚡ LIVE DEMO</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-type">ARCHITECTURE · OPEN SOURCE</div>
+          <h3 class="pc-name">Unity-FSM-Framework</h3>
+          <p class="pc-desc">A pure-C#, type-safe finite state machine with zero Unity dependencies in the core — drops into any project or any C# codebase unchanged. Demonstrated via a full patrol/chase/attack agent.</p>
+          <div class="pc-feats">
+            <span class="pc-feat">Generic StateMachine&lt;T&gt; — zero Unity deps in core</span>
+            <span class="pc-feat">IState interface — enter, tick, exit lifecycle</span>
+            <span class="pc-feat">Type-safe transitions, no magic strings</span>
+            <span class="pc-feat">Drop-in portable to any C# project</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://play.unity.com/en/games/2c78010f-948e-4979-a8fd-a0fa791ed7ba/build" target="_blank" class="pc-link-live"><i class="fas fa-play"></i> PLAY NOW</a>
+            <a href="https://github.com/Venkate0/Unity-FSM-Framework" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unity-ObjectPool-Demo -->
+      <div class="pc rv d3" data-tags="unity systems">
+        <div class="pc-thumb">
+          <div class="pc-thumb-bg" style="background:linear-gradient(135deg,#1a0a00,#2e1400);"></div>
+          <div class="pc-thumb-ico">♻️</div>
+          <div class="pc-thumb-fog"></div>
+          <span class="pc-badge b-unity">UNITY · C#</span>
+          <span class="pc-badge b-live">⚡ LIVE DEMO</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-type">OPTIMIZATION · OPEN SOURCE</div>
+          <h3 class="pc-name">Unity-ObjectPool-Demo</h3>
+          <p class="pc-desc">Production-quality generic ObjectPool&lt;T&gt; — pre-warmed, hard-capped, with live runtime statistics. Demonstrated via a wave-based top-down shooter with zero GC allocations in the hot path.</p>
+          <div class="pc-feats">
+            <span class="pc-feat">Generic pre-warmed ObjectPool&lt;T&gt;</span>
+            <span class="pc-feat">Live stats HUD — active / pooled / total</span>
+            <span class="pc-feat">Wave-based top-down shooter demo</span>
+            <span class="pc-feat">Zero GC allocations during gameplay loop</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://play.unity.com/en/games/898e1a50-b463-438f-b0bb-7dab29a0dbbc/build" target="_blank" class="pc-link-live"><i class="fas fa-play"></i> PLAY NOW</a>
+            <a href="https://github.com/Venkate0/Unity-ObjectPool-Demo" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unity-WaveSystem -->
+      <div class="pc rv d1" data-tags="unity systems">
+        <div class="pc-thumb">
+          <div class="pc-thumb-bg" style="background:linear-gradient(135deg,#0a0a1f,#14143a);"></div>
+          <div class="pc-thumb-ico">🌊</div>
+          <div class="pc-thumb-fog"></div>
+          <span class="pc-badge b-unity">UNITY · C#</span>
+          <span class="pc-badge b-live">⚡ LIVE DEMO</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-type">GAMEPLAY SYSTEMS · OPEN SOURCE</div>
+          <h3 class="pc-name">Unity-WaveSystem</h3>
+          <p class="pc-desc">Designer-friendly, data-driven wave spawning using ScriptableObject wave definitions, a decoupled static event hub, pooled enemies, crash-safe progression saving, and timeout-protected wave completion.</p>
+          <div class="pc-feats">
+            <span class="pc-feat">ScriptableObject-driven wave definitions</span>
+            <span class="pc-feat">Decoupled static event hub — zero coupling</span>
+            <span class="pc-feat">Crash-safe progression saving between waves</span>
+            <span class="pc-feat">Timeout-protected wave completion logic</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://play.unity.com/en/games/fc06519f-ca1d-4915-aa4f-82f9b26c7f9e/build" target="_blank" class="pc-link-live"><i class="fas fa-play"></i> PLAY NOW</a>
+            <a href="https://github.com/Venkate0/Unity-WaveSystem" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unity-SaveSystem -->
+      <div class="pc rv d2" data-tags="unity systems">
+        <div class="pc-thumb">
+          <div class="pc-thumb-bg" style="background:linear-gradient(135deg,#1a0a1a,#2e0d2e);"></div>
+          <div class="pc-thumb-ico">💾</div>
+          <div class="pc-thumb-fog"></div>
+          <span class="pc-badge b-unity">UNITY · C#</span>
+          <span class="pc-badge b-live">⚡ LIVE DEMO</span>
+        </div>
+        <div class="pc-body">
+          <div class="pc-type">SYSTEMS ARCHITECTURE · OPEN SOURCE</div>
+          <h3 class="pc-name">Unity-SaveSystem</h3>
+          <p class="pc-desc">Crash-safe, portable save system — atomic JSON writes, an anti-tamper obfuscation layer, PlayerPrefs fallback for restricted platforms, versioned save migration, and a clean ISaveable interface.</p>
+          <div class="pc-feats">
+            <span class="pc-feat">Atomic JSON writes — crash-safe by design</span>
+            <span class="pc-feat">Anti-tamper obfuscation layer</span>
+            <span class="pc-feat">Versioned save migration across game updates</span>
+            <span class="pc-feat">ISaveable interface — plug into any component</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://play.unity.com/en/games/bc5c781d-e421-4def-8353-e9a6145f7ede/build" target="_blank" class="pc-link-live"><i class="fas fa-play"></i> PLAY NOW</a>
+            <a href="https://github.com/Venkate0/Unity-SaveSystem" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
       </div>
